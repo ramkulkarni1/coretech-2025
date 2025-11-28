@@ -5,12 +5,359 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platform Coverage</title>
     <link rel="stylesheet" href="common.css">
+    <style>
+        .slide-container {
+            padding: 20px 30px 60px 30px !important;
+        }
+        
+        .platform-table {
+            border-collapse: collapse;
+            background: white;
+            font-size: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            margin: 0 auto;
+            width: 80%;
+            table-layout: fixed;
+        }
+        
+        .platform-table th,
+        .platform-table td {
+            border: 1px solid #333;
+            text-align: center;
+            padding: 5px;
+            font-weight: 600;
+            height: 30px;
+        }
+        
+        .platform-table tr {
+            height: 30px;
+        }
+        
+        .platform-table th:nth-child(n+3),
+        .platform-table td:nth-child(n+3) {
+            width: 100px;
+        }
+        
+        .platform-table th {
+            background: #4A90E2;
+            color: black;
+            font-size: 12px;
+            line-height: 1.1;
+        }
+        
+        .platform-table th:nth-child(n+3) {
+            font-size: 22px;
+        }
+        
+        .category-header {
+            text-align: center !important;
+            font-weight: 700;
+            color: white;
+            font-size: 11px;
+            padding: 8px !important;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            vertical-align: middle;
+        }
+        
+        .color-graphics {
+            background: #FF8C42;
+        }
+        
+        .typography {
+            background: #4A90E2;
+        }
+        
+        .pdf {
+            background: #E57373;
+        }
+        
+        .imaging {
+            background: #5FA777;
+        }
+        
+        .library-name {
+            text-align: left;
+            background: #f5f5f5;
+            font-weight: 600;
+            padding-left: 15px !important;
+            font-size: 10px;
+        }
+        
+        .cell-yes {
+            background: #ddab7c;;
+            color: white;
+        }
+        
+        .cell-no {
+            background: white;
+        }
+        
+        .total-row {
+            background: #e8e8e8;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        
+        h2 {
+            margin-bottom: 15px !important;
+            font-size: 60px !important;
+        }
+        
+        .table-wrapper {
+            max-height: 80vh;
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+    </style>
 </head>
 <body>
     <div class="slide-container">
-        <div class="slide-content" style="text-align: center;">
-            <h1 style="font-size: 100px; margin-bottom: 40px;">Platform Coverage</h1>
-            <p class="subtitle" style="font-size: 32px;">Platform Coverage table to be added here</p>
+        <div class="slide-content">
+            <h2>Platform Coverage</h2>
+            <div class="table-wrapper">
+            <table class="platform-table">
+                <thead>
+                        <tr>
+                            <th style="width: 30px; background-color: hsl(180, 14%, 99%);"></th>
+                            <th style="width: 80px;">Total Libraries</th>
+                            <th>🖥️<br>Windows</th>
+                            <th>🍎<br>Macintosh</th>
+                            <th>💪<br>Win ARM</th>
+                            <th>🐧<br>Linux</th>
+                            <th>📱<br>iOS</th>
+                            <th>🤖<br>Android</th>
+                            <th>🌐<br>Web</th>
+                        </tr>
+                </thead>
+                <tbody>
+                    <!-- Color & Graphics -->
+                    <tr>
+                        <td class="category-header color-graphics" rowspan="4">Color & Graphics</td>
+                        <td class="library-name">ACE</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                    </tr>
+                    <tr>
+                        <td class="library-name">AGM</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                    </tr>
+                    <tr>
+                        <td class="library-name">ARE</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                    </tr>
+                    <tr>
+                        <td class="library-name">SNV</td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                    </tr>
+                    
+                    <!-- Typography & Font Management -->
+                    <tr>
+                        <td class="category-header typography" rowspan="5">Typography & Font Management</td>
+                        <td class="library-name">CoolType</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                    </tr>
+                    <tr>
+                        <td class="library-name">TypeQuest</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                    </tr>
+                    <tr>
+                        <td class="library-name">Cleaner Tool</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                    </tr>
+                    <tr>
+                        <td class="library-name">SkCool</td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-yes"></td>
+                    </tr>
+                    <tr>
+                        <td class="library-name">Live Type</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                    </tr>
+                    
+                    <!-- File Formats -->
+                    <tr>
+                        <td class="category-header pdf" rowspan="4">File Formats</td>
+                        <td class="library-name">PDFPort</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                    </tr>
+                    <tr>
+                        <td class="library-name">PDFL</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                    </tr>
+                    <tr>
+                        <td class="library-name">MPS</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-yes"></td>
+                    </tr>
+                    <tr>
+                        <td class="library-name">Gibson</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                    </tr>
+                    
+                    <!-- Imaging & Metadata -->
+                    <tr>
+                        <td class="category-header imaging" rowspan="7">Imaging & Metadata</td>
+                        <td class="library-name">AIDE</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                    </tr>
+                    <tr>
+                        <td class="library-name">XML</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                    </tr>
+                    <tr>
+                        <td class="library-name">XMP</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                    </tr>
+                    <tr>
+                        <td class="library-name">Flite</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                    </tr>
+                    <tr>
+                        <td class="library-name">SWitchEngine</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                    </tr>
+                    <tr>
+                        <td class="library-name">Sangam</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                    </tr>
+                    <tr>
+                        <td class="library-name">Log Collector</td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-yes"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                        <td class="cell-no"></td>
+                    </tr>
+                    
+                    <!-- Total Row -->
+                    <tr class="total-row">
+                        <td style="background-color: white;"></td>
+                        <td>20</td>
+                        <td>18</td>
+                        <td>16</td>
+                        <td>14</td>
+                        <td>13</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>11</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
         </div>
     </div>
     
