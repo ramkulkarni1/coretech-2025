@@ -9,13 +9,13 @@ const slides = [
     { file: 'slide3.html', title: 'Our Impact' },
     { file: 'slide4.html', title: 'Platform Coverage' },
     { file: 'slide5.html', title: '2025 Achievements' },
-    { file: 'slide6.html', title: '2026 Theme' },
-    { file: 'slide7.html', title: 'Key Initiatives: 2026-H1' },
-    { file: 'slide8.html', title: 'Demos' },
-    { file: 'slide9.html', title: 'Fontspire Feedback' },
-    { file: 'slide10.html', title: 'Auto Tag' },
-    { file: 'slide11.html', title: 'High Resolution GIF Support in Express' },
-    { file: 'slide12.html', title: 'Math Expressions Feature support in Indesign' },
+    { file: 'slide6.html', title: 'Demos' },
+    { file: 'slide7.html', title: 'Fontspire Feedback' },
+    { file: 'slide8.html', title: 'Auto Tag' },
+    { file: 'slide9.html', title: 'High Resolution GIF Support in Express' },
+    { file: 'slide10.html', title: 'Math Expressions Feature support in Indesign' },
+    { file: 'slide11.html', title: '2026 Theme' },
+    { file: 'slide12.html', title: 'Key Initiatives: 2026-H1' },
     { file: 'slide13.html', title: 'Thank You' }
 ];
 

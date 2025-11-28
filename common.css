@@ -18,7 +18,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 60px 70px 60px;
+    padding: 30px 60px 70px 60px;
 }
 
 .slide-content {
@@ -204,7 +204,7 @@ h2 {
 /* Fixed Grid Layouts */
 .grid-container {
     display: grid;
-    gap: 30px;
+    gap: 20px;
     width: 100%;
     margin: 0 auto;
 }
@@ -354,10 +354,10 @@ h2 {
 .achievement-card {
     background: white;
     border-radius: 12px;
-    padding: 30px 25px;
+    padding: 15px 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
-    min-height: 380px;
+    min-height: 220px;
     display: flex;
     flex-direction: column;
 }
@@ -367,40 +367,49 @@ h2 {
 }
 
 .achievement-icon {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 8px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievement-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
 .achievement-title {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     color: #1a1a1a;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
 .achievement-list {
     list-style: none;
     padding: 0;
-    margin: 15px 0;
+    margin: 8px 0;
     flex-grow: 1;
 }
 
 .achievement-list li {
-    padding: 8px 0;
-    padding-left: 22px;
+    padding: 5px 0;
+    padding-left: 18px;
     position: relative;
     color: #444;
-    line-height: 1.5;
-    font-size: 14px;
+    line-height: 1.3;
+    font-size: 12px;
     text-align: left;
 }
 
 .achievement-list li.highlight {
-    padding: 12px 8px 12px 22px;
+    padding: 8px 5px 8px 18px;
     background: #fff3cd;
-    margin: 8px -8px;
+    margin: 5px -5px;
     border-radius: 6px;
     font-weight: 600;
 }
@@ -458,7 +467,7 @@ h2 {
     border-radius: 12px;
     padding: 25px 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    min-height: 320px;
+    min-height: 220px;
     display: flex;
     flex-direction: column;
 }
@@ -472,7 +481,7 @@ h2 {
 }
 
 .roadmap-icon {
-    font-size: 32px;
+    font-size: 40px;
     margin-right: 12px;
 }
 
