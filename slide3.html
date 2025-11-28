@@ -3,37 +3,383 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Impact</title>
+    <title>Product Usage</title>
     <link rel="stylesheet" href="common.css">
+    <style>
+        .slide-container {
+            padding: 20px 30px 60px 30px !important;
+        }
+        
+        .matrix-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+        
+        .matrix-table {
+            border-collapse: collapse;
+            background: white;
+            font-size: 11px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+        
+        .matrix-table th,
+        .matrix-table td {
+            border: 1px solid #222;
+            text-align: center;
+            line-height: 1.1;
+            box-sizing: border-box;
+        }
+        
+        .matrix-table th {
+            font-weight: 700;
+            color: white;
+            padding: 2px;
+        }
+        
+        .matrix-table td {
+            padding: 0;
+            height: 27px;
+        }
+        
+        .header-color-graphics {
+            background: #FF8C42;
+        }
+        
+        .header-imaging {
+            background: #5FA777;
+        }
+        
+        .header-pdf {
+            background: #E57373;
+        }
+        
+        .header-typography {
+            background: #4A90E2;
+        }
+        
+        .header-tools {
+            background: #7B68BE;
+        }
+        
+        .matrix-table td:first-child {
+            text-align: left;
+            font-weight: 600;
+            background: #e8e8e8;
+            white-space: nowrap;
+            font-size: 11.5px;
+            padding: 2px 6px;
+        }
+        
+        .matrix-table th:first-child {
+            background: #e8e8e8;
+            white-space: nowrap;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 3px 6px;
+            color: black;
+            text-align: left;
+        }
+        
+        .matrix-table .lib-col {
+            width: 65px;
+            min-width: 35px;
+            max-width: 65px;
+        }
+        
+        .cell-used {
+            background: #0ad3da;
+        }
+        
+        .cell-empty {
+            background: white;
+        }
+        
+        .category-label {
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px !important;
+        }
+        
+        h2 {
+            margin-bottom: 12px !important;
+            font-size: 40px !important;
+        }
+    </style>
 </head>
 <body>
     <div class="slide-container">
         <div class="slide-content">
-            <h2>Our Impact</h2>
-            <div class="grid-container grid-2x2">
-                <div class="stat-card">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Adobe Products</div>
-                    <div class="stat-detail">Illustrator, Photoshop, InDesign, Acrobat, Premiere, After Effects, Lightroom, and more</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-number">20</div>
-                    <div class="stat-label">Core Libraries</div>
-                    <div class="stat-detail">Foundational technologies powering creative workflows worldwide</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-number">250K</div>
-                    <div class="stat-label">Crashes/Day</div>
-                    <div class="stat-detail">Processed and analyzed for product quality and stability improvements</div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-number">7</div>
-                    <div class="stat-label">Platforms</div>
-                    <div class="stat-detail">Windows, Mac, iOS, Android, Web, Linux, Win ARM</div>
-                </div>
+            <h2>Product Usage</h2>
+            <div class="matrix-container">
+                <table class="matrix-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="1" style="width: 200px;">Clients\Libraries</th>
+                            <th colspan="4" class="category-label header-color-graphics">Color & Graphics</th>
+                            <th colspan="7" class="category-label header-imaging">Imaging & Metadata</th>
+                            <th colspan="4" class="category-label header-pdf">PDF</th>
+                            <th colspan="4" class="category-label header-typography">Typography</th>
+                            <th colspan="" class="category-label header-tools">Tools</th>
+                        </tr>
+                        <tr>
+                            <th class="header-color-graphics lib-col"></th>
+                            <th class="header-color-graphics lib-col">ACE</th>
+                            <th class="header-color-graphics lib-col">AGM</th>
+                            <th class="header-color-graphics lib-col">ARE/BIB/<br>BIBUtils</th>
+                            <th class="header-color-graphics lib-col">SVGAGM</th>
+                            <th class="header-imaging lib-col">AIDE</th>
+                            <th class="header-imaging lib-col">Flite</th>
+                            <th class="header-imaging lib-col">JPEG</th>
+                            <th class="header-imaging lib-col">JPEG2K</th>
+                            <th class="header-imaging lib-col">SANGAM</th>
+                            <th class="header-imaging lib-col">XML</th>
+                            <th class="header-imaging lib-col">XMP</th>
+                            <th class="header-pdf lib-col">PDFPort</th>
+                            <th class="header-pdf lib-col">PDFLIB</th>
+                            <th class="header-pdf lib-col">Gibson</th>
+                            <th class="header-pdf lib-col">MPS</th>
+                            <th class="header-typography lib-col">CoolType</th>
+                            <th class="header-typography lib-col">TypeQuest</th>
+                            <th class="header-typography lib-col">TypeQuest<br>Web</th>
+                            <th class="header-typography lib-col">LiveType</th>
+                            <th class="header-tools lib-col">Crash<br>Reporter</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Illustrator/AILib/AIWeb/Proteus</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>InDesign/InCopy</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>Photoshop</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>PIE/PSWeb/Rocket</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>Acrobat</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>Premiere Pro</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>Adobe Media Encoder</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>After Effects</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>Lightroom</td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>ACP (Flite,Switch, SVG and XMP workers)</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>Behance</td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>Monza</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>PDFL SDK</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>AEM DAM</td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>LC SAP</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>Bridge</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>Photoshop Express</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>Premiere -Rush</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>Framemaker</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>OneATE</td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>Stock</td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>Painter</td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>CC Express</td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>CC-Web</td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>Horizon(Platform)</td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>CoreSync/CCD</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>Fresco</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>AERO</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                        <tr>
+                            <td>Adobe-XD</td>
+                            <td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td><td class="cell-used lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td><td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-used lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td><td class="cell-empty lib-col"></td>
+                            <td class="cell-empty lib-col"></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

@@ -6,8 +6,8 @@
 const slides = [
     { file: 'index.html', title: 'CoreTech' },
     { file: 'slide2.html', title: 'What We Offer' },
-    { file: 'slide3.html', title: 'Our Impact' },
-    { file: 'slide4.html', title: 'Platform Coverage' },
+    { file: 'slide3.html', title: 'Product Usage' },
+    { file: 'slide4.html', title: 'Slide 4' },
     { file: 'slide5.html', title: '2025 Achievements' },
     { file: 'slide6.html', title: 'Demos' },
     { file: 'slide7.html', title: 'Fontspire Feedback' },
@@ -16,7 +16,9 @@ const slides = [
     { file: 'slide10.html', title: 'Math Expressions Feature support in Indesign' },
     { file: 'slide11.html', title: '2026 Theme' },
     { file: 'slide12.html', title: 'Key Initiatives: 2026-H1' },
-    { file: 'slide13.html', title: 'Thank You' }
+    { file: 'slide13.html', title: 'Thank You' },
+    { file: 'slide14.html', title: 'Platform Coverage' },
+    { file: 'slide15.html', title: 'Our Impact' }
 ];
 
 // Get current slide information
