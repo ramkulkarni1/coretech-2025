@@ -7,10 +7,11 @@ This is a multi-slide presentation with separate HTML files for each slide.
 ```
 presentation/
 ├── index.html                     - First slide (Title slide)
-├── slide2.html through slide13.html - Content slides
+├── slide2.html through slide15.html - Content slides
 ├── common.css                     - Shared styles for all slides
 ├── navigation.js                  - Navigation configuration and logic
 ├── README.md                      - This file
+├── TALKING_POINTS.md              - Detailed presentation talking points and notes
 ├── coretech-presentation.html    - Original single-page presentation
 └── images/                        - Media files folder
     ├── auto_tagging_demo.mp4
