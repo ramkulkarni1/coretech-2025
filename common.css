@@ -409,7 +409,6 @@ h2 {
 .achievement-list li.highlight {
     padding: 8px 5px 8px 18px;
     background: #fff3cd;
-    margin: 5px -5px;
     border-radius: 6px;
     font-weight: 600;
 }
@@ -510,7 +509,6 @@ h2 {
 .roadmap-list li.highlight {
     padding: 12px 8px 12px 22px;
     background: #fff3cd;
-    margin: 8px -8px;
     border-radius: 6px;
     font-weight: 600;
 }
